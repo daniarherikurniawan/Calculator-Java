@@ -1,0 +1,49 @@
+Test Case
+1. test keribetan
+	Q : (((134+567)*154-180/(3*2))-1234*123)/2+90
+	A : -21839
+	
+2. test spasi
+	Q : 156 + ( 987 - 345 ) * 567 / ( 640 - 667)
+	A : -13326
+	
+3. test nilai negatif
+	a. test penjumlahan dan pengurangan negatif
+		Q : 155+(-80)*261/(180/(-6))+(-1245)
+		A : -394
+	b. test perkalian dan pembagian negatif
+		Q : 167*(-98)
+		A : -16366
+		Q : (-156)/3
+		A : -52
+		Q : (-4312)*1236/(-33)
+		A : 161504
+	c. test penjumlahan dan pengurangan dengan tandai minus bersebelahan dengan operator
+		Q : 134+-654
+		A : -520
+		Q : 32565--65345
+		A : -32780
+		
+4. test big number
+	Q : 15164543*172545127
+	A : 2616567997831961
+	Q : 1234*1234*1234
+	A : 1879080904
+	
+5. test kesalahan penulisan (.)
+	Q : 342+90.0.987
+	A : *autocorrect* 432.0987
+	
+6. test kesalahan penulisan double operator
+	Q : 765*+87
+	A : *autocorrect* 852
+	
+7. test dengan tanda kurung yang kurang
+	Q : ((-1)*2)+3-(8*9+(21(-9)*7)-2)+3)
+	A : *autocorrect* -150(calc) 1257(google)
+	
+8. test operasi bilangan riil
+	Q : 1543.127364+754235.87627153
+	A : 755779.003636
+	Q : 651234.28746*823.253
+	A : 536130580.854
